@@ -1,0 +1,13 @@
+engine: chatterbox            # chatterbox | fake
+device: cuda                  # cuda | cpu
+seed: 12345                   # fixed, non-zero -> consistent voice across chunks
+chatterbox: { cfg: 0.3, exaggeration: 0.5 }
+reference: { path: reference/ref.wav, transcript: reference/ref.txt }
+stories_dir: stories          # chapters live at stories/<name>/<name>.txt
+chunking: { max_chars: 250 }
+pauses_ms: { intra_paragraph: 350, inter_paragraph: 600 }
+loudness: { i: -18, tp: -3, lra: 11 }
+qa: { enabled: true, whisper_model: small.en, max_retries: 3, max_word_error_rate: 0.15 }
+speak_title: true
+speak_subtitle: false
+output: { mp3_dir: out, m4b_path: out/audiobook.m4b }

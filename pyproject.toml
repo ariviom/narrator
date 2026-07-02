@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narrator"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+
+[project.scripts]
+narrator = "narrator.cli:main"
+
+[tool.setuptools]
+packages = ["narrator", "narrator.engines"]
+
+[tool.pytest.ini_options]
+markers = ["gpu: requires the TTS model/GPU", "integration: needs ffmpeg + real media"]

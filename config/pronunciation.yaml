@@ -1,0 +1,12 @@
+# Phonetic respellings for proper nouns / invented words the model mispronounces.
+# Applied whole-word and case-insensitive, AFTER number/abbreviation expansion.
+# Grow this by ear: narrate a chapter, note any mangled names, add them here.
+respellings:
+  Siobhan: "Shiv-awn"            # example: force a tricky name's pronunciation
+  Featherstonehaugh: "Fan-shaw"  # example: an invented/archaic spelling
+
+# Literal/regex replacements, applied BEFORE respellings.
+# Common abbreviations (St./No./Mr./Mrs./Ms./Dr.) are already expanded upstream
+# by expand_abbreviations, so don't list them here; add only patterns that must
+# run after number/abbreviation expansion.
+replacements: []
