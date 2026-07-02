@@ -9,6 +9,8 @@ It clones one constant narration timbre and uses it for everything — it does n
 do per-character voices (mixing dialogue voices into the reference makes the
 clone sound averaged and inconsistent).
 
+> Design rationale and a from-scratch build guide: [`docs/build-brief.md`](docs/build-brief.md).
+
 ## Requirements
 
 - **Python 3.11** (a dedicated venv; avoids install friction on 3.12).
